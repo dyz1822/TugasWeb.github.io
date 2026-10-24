@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir Profil Mahasiswa</title>
+    <!-- memanggil file CSS eksternal -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <!-- bagian header template -->
+    <header>
+        <h2>Website saya</h2>
+        <nav class="nav-menu">
+            <a href="../index.html" class="nav-link">Beranda</a>
+            <a href="profile.html" class="nav-link active">Profil Mahasiswa</a>
+        </nav>
+    </header>
+    <!-- akhir bagian header template -->
+
+    <div class="form-wrapper">
+        <h2 id="form-title">Formulir Profil Mahasiswa</h2>
+        <p class="form-desc">Silakan lengkapi formulir data diri di bawah ini dengan benar.</p>
+
+        <form id="profile-form" action="#" method="POST">
+            
+            <div class="form-group">
+                <label for="nim" class="form-label">NIM :</label>
+                <input type="text" id="nim" name="nim" class="form-input" placeholder="Masukkan NIM (contoh: 412543302)" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nama" class="form-label">Nama Lengkap :</label>
+                <input type="text" id="nama" name="nama" class="form-input" placeholder="Masukkan nama lengkap" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Jenis Kelamin :</label>
+                <div class="radio-group">
+                    <label class="radio-label">
+                        <input type="radio" id="gender-laki" name="gender" value="Laki-laki" class="form-radio" checked> Laki-laki
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" id="gender-perempuan" name="gender" value="Perempuan" class="form-radio"> Perempuan
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="prodi" class="form-label">Program Studi :</label>
+                <select id="prodi" name="prodi" class="form-select">
+                    <option value="Teknik Informatika">Teknik Informatika</option>
+                    <option value="Sistem Informasi">Sistem Informasi</option>
+                    <option value="Ilmu Komunikasi">Ilmu Komunikasi</option>
+                    <option value="Manajemen">Manajemen</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="form-label">Alamat Email :</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="contoh: nama@undira.ac.id" required>
+            </div>
+
+            <div class="form-group">
+                <label for="alamat" class="form-label">Alamat Domisili :</label>
+                <textarea id="alamat" name="alamat" class="form-textarea" rows="3" placeholder="Masukkan alamat lengkap"></textarea>
+            </div>
+
+            <div class="form-action">
+                <button type="submit" id="btn-submit" class="btn btn-primary">Simpan Profil</button>
+                <button type="reset" id="btn-reset" class="btn btn-secondary">Reset</button>
+            </div>
+
+        </form>
+    </div>
+
+    <!-- bagian footer template -->
+    <footer>
+        <p>&copy; 2026 Pemrograman Web - Teknik Informatika | Dibuat oleh Doly Mardianto</p>
+        <p>Hubungi: <a href="mailto:info@undira.ac.id">info@undira.ac.id</a></p>
+    </footer>
+    <!-- akhir bagian Footer template -->
+
+</body>
+</html>
